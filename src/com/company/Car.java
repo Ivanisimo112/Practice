@@ -1,9 +1,15 @@
 package com.company;
 
 public class Car {
-    Brakes brakes = new Brakes();
-    Engine engine = new Engine();
-    FrontSeats frontSeats = new FrontSeats();
-    Headlights headlights = new Headlights();
-    Wheel wheel = new Wheel();
+    private Brakes brakes = new Brakes();
+    private Engine engine = new Engine();
+    private FrontSeats frontSeats = new FrontSeats();
+    private Headlights headlights = new Headlights();
+    private Wheel wheel = new Wheel();
+    protected Car(){
+
+    }
+    public void drive(){
+        System.out.println("Ця машина їде");
+    }
 }
